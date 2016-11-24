@@ -17,6 +17,12 @@ describe("Test for proper arithmetic functionality", function() {
   it("should return 120 as factorial for 5", function() {
     assert(myApp.computeFactorial(5) == 120);
   })
+  it("should return 1 for average for 1,1,1", function() {
+  	assert(myApp.computeAverage(1, 1, 1)==1);
+  })
+  it("should return 1 for factorial of 0", function() {
+  	assert(myApp.computeFactorial(0)==1);
+  })
 })
 
 
